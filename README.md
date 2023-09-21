@@ -45,9 +45,32 @@ https://www.youtube.com/watch?v=yyUHQIec83I
   2. How to run a Go Program
 ```
 
-2. Hello World
+2. Booking App
 
 ```
-  1. Minimum Project Structure
-  2. How to run a Go Program
+  1. Variable
+    - variables are used to store values
+    - Like containers for values
+    - Give the variable a name & refercence everywhere in the app.
+    - 1. Benefits
+      - update the value once
+      - makes application more flexible
+
+  2.Formatting Output
+    - printf
+
+  3. Data Types
+    - In any programming langauge you have multiple datatypes
+    - Difference: which data types do they support s exactly?
+      - string
+      - integers
+      - booleans
+      - Maps
+      - Arrays
+    - Each data type scan do differnt things and behaves differently.
+
+  4. Getting User Input
+    - Pointer
+      1. What is a pointer?
+        - A pointer is a variable that points to the memory address of another variable.
 ```
