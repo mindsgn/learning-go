@@ -35,3 +35,19 @@ https://www.youtube.com/watch?v=yyUHQIec83I
 - Requires fewer resources to run.
 - Go is a Compiled Langauge: Compiles into sing binary (Machine Codes)
   - can run on all Operating Software consistantly
+
+## Lessons
+
+1. Hello World
+
+```
+  1. Minimum Project Structure
+  2. How to run a Go Program
+```
+
+2. Hello World
+
+```
+  1. Minimum Project Structure
+  2. How to run a Go Program
+```
