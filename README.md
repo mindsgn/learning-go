@@ -73,4 +73,26 @@ https://www.youtube.com/watch?v=yyUHQIec83I
     - Pointer
       1. What is a pointer?
         - A pointer is a variable that points to the memory address of another variable.
+
+  5. Array and Slices
+    - Array and slices are Data structures to store a collection of element s in a sing variable.
+
+    1. Arrays
+      - fixed in size
+    2. Slices
+      - Slice is an abstraction of an array.
+      - slices are more flexible.
+      - slices can be resized
+
+  6. Loops
+    - loops allow code to execute multiple times.
+
+  7. Blank Identifier
+    - ignore variabe not in use
+    - explit with unused variables
+
+  8. If, Else Statement & Boolean
+
+  9. Conditionals
+    - Expression that evaluate to either tru or false
 ```
