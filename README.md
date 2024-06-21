@@ -3,7 +3,7 @@
 ## lesson from
 
 ```
-https://www.youtube.com/watch?v=yyUHQIec83I
+    https://gobyexample.com/
 ```
 
 ## WHy Go
@@ -39,60 +39,3 @@ https://www.youtube.com/watch?v=yyUHQIec83I
 ## Lessons
 
 1. Hello World
-
-```
-  1. Minimum Project Structure
-  2. How to run a Go Program
-```
-
-2. Booking App
-
-```
-  1. Variable
-    - variables are used to store values
-    - Like containers for values
-    - Give the variable a name & refercence everywhere in the app.
-    - 1. Benefits
-      - update the value once
-      - makes application more flexible
-
-  2.Formatting Output
-    - printf
-
-  3. Data Types
-    - In any programming langauge you have multiple datatypes
-    - Difference: which data types do they support s exactly?
-      - string
-      - integers
-      - booleans
-      - Maps
-      - Arrays
-    - Each data type scan do differnt things and behaves differently.
-
-  4. Getting User Input
-    - Pointer
-      1. What is a pointer?
-        - A pointer is a variable that points to the memory address of another variable.
-
-  5. Array and Slices
-    - Array and slices are Data structures to store a collection of element s in a sing variable.
-
-    1. Arrays
-      - fixed in size
-    2. Slices
-      - Slice is an abstraction of an array.
-      - slices are more flexible.
-      - slices can be resized
-
-  6. Loops
-    - loops allow code to execute multiple times.
-
-  7. Blank Identifier
-    - ignore variabe not in use
-    - explit with unused variables
-
-  8. If, Else Statement & Boolean
-
-  9. Conditionals
-    - Expression that evaluate to either tru or false
-```
