@@ -2,16 +2,11 @@ package main
 
 import "fmt"
 
-func AddString(word string) string {
-	return word + "lang"
-}
-
-func AddStringAndNumber(number uint) string {
-	sum := 1 + number
-	return "1+1=" + fmt.Sprint(sum)
-}
-
 func main() {
-	fmt.Println(AddString("coffee"))
-	fmt.Println(AddStringAndNumber(1))
+	fmt.Println("go" + "lang")
+	fmt.Println("1+1 =", 1+1)
+	fmt.Println("7.0/3.0 =", 7.0/3.0)
+	fmt.Println(true && false)
+	fmt.Println(true || false)
+	fmt.Println(!true)
 }
