@@ -37,3 +37,9 @@ Variables are explicitly declared and used by compiler to check type correctness
     https://gobyexample.com/for
 ```
 For is Go's only looping construct
+
+### 6. If/Else
+```
+    https://gobyexample.com/if-else
+```
+
