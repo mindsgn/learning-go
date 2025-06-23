@@ -27,8 +27,13 @@ Go has various value types including
 ```
 Variables are explicitly declared and used by compiler to check type correctness of function calls
 
-
 ### 4. Constants
 ```
     https://gobyexample.com/constants
 ```
+
+### 5. For
+```
+    https://gobyexample.com/for
+```
+For is Go's only looping construct
