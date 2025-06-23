@@ -43,3 +43,8 @@ For is Go's only looping construct
     https://gobyexample.com/if-else
 ```
 
+### 6. Switch
+```
+    https://gobyexample.com/switch
+```
+
