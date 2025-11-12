@@ -1,0 +1,3 @@
+module github.com/mindsgn/learning-go/chapter-1
+
+go 1.25.4
