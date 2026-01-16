@@ -3,10 +3,18 @@ package main
 import "testing"
 
 func TestHello(t *testing.T) {
-	got := Hello()
-	want := "Hello, world"
+	tests := []struct {
+		name string
+		want string
+	}{
+		{"Starndard Greeting", "Hello, world"},
+	}
 
-	if got != want {
-		t.Errorf("got %q want %q", got, want)
+	for _, tt := range tests {
+		t.Run(tt.name, func(t *testing.T) {
+			if got := Hello(); got != tt.want {
+				t.Errorf("Hello() = %q want %q", got, tt.want)
+			}
+		})
 	}
 }
