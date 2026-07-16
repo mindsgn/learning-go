@@ -1,5 +1,4 @@
-
-    # Day 004 - Chapter 2 Exercise 1
+# Day 004 - Chapter 2 Exercise 1
 
     **Chapter:** Predeclared Types and Declarations
 
