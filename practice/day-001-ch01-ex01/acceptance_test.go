@@ -1,21 +1,19 @@
 package main
 
 import (
-	"path/filepath"
+	"os/exec"
 	"strings"
 	"testing"
-
-	"learninggo/practice/internal/testkit"
 )
 
-func TestOfflineShareNoteExists(t *testing.T) {
-	dir := testkit.PackageDir(t)
-	data := testkit.MustReadFile(t, filepath.Join(dir, "playground_share.md"))
-	trimmed := strings.TrimSpace(data)
-	if trimmed == "" {
-		t.Fatal("playground_share.md is empty")
+func TestHelloWorld(t *testing.T) {
+	cmd := exec.Command("go", "run", ".")
+	out, err := cmd.CombinedOutput()
+	if err != nil {
+		t.Fatalf("failed to run program: %v\n%s", err, out)
 	}
-	if !strings.Contains(data, "Hello, world") && !strings.Contains(data, "go.dev/play") && !strings.Contains(data, "play.golang.org") {
-		t.Fatal("expected a playground link or a local Hello World note")
+	got := strings.TrimSpace(string(out))
+	if got != "Hello World" {
+		t.Errorf("expected %q, got %q", "Hello World", got)
 	}
 }
