@@ -4,6 +4,8 @@ This repository is a local practice workspace for *Learning Go, 2nd Edition* by 
 
 The main deliverable is the offline exercise pack in [practice/README.md](/Users/sibongiseni/projects/learning-go/practice/README.md). It extracts the chapter-end exercises into individual day-by-day folders so you can practice in the terminal and check your work with tests.
 
+There is also a SQLite-backed terminal app inside `practice/` for tracking what you have started, completed, and tested.
+
 ## What Is Here
 
 - `practice/`
@@ -29,6 +31,30 @@ List all exercise folders:
 make list
 ```
 
+Show tracked progress:
+
+```sh
+make progress
+```
+
+See the next exercise:
+
+```sh
+make next
+```
+
+Start a tracked day:
+
+```sh
+make start DAY=4
+```
+
+Mark it done:
+
+```sh
+make done DAY=4
+```
+
 Run one day:
 
 ```sh
@@ -51,6 +77,8 @@ Each day folder includes:
 - either an official reference solution or an offline testing contract
 
 Some exercises were adapted slightly so they still work offline. This mostly affects prompts that originally depended on public repositories, the Go Playground, downloadable sample apps, or manual exploration.
+
+The tracker stores its data in `practice/.practice.db`, so your progress stays local and works offline.
 
 ## Recommended Flow
 
