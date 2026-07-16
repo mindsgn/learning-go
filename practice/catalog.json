@@ -1,0 +1,386 @@
+[
+  {
+    "day": 1,
+    "chapter": 1,
+    "exercise": 1,
+    "folder": "day-001-ch01-ex01",
+    "chapter_title": "Setting Up Your Go Environment",
+    "prompt": "1. Take the \u201cHello, world!\u201d program and run it on The Go Playground. Share a link to the code in the playground with a coworker who would love to learn about Go."
+  },
+  {
+    "day": 2,
+    "chapter": 1,
+    "exercise": 2,
+    "folder": "day-002-ch01-ex02",
+    "chapter_title": "Setting Up Your Go Environment",
+    "prompt": "2. Add a target to the Makefile called clean that removes the hello_world binary and any other temporary files created by go build. Take a look at the Go command documentation to find a go command to help implement this."
+  },
+  {
+    "day": 3,
+    "chapter": 1,
+    "exercise": 3,
+    "folder": "day-003-ch01-ex03",
+    "chapter_title": "Setting Up Your Go Environment",
+    "prompt": "3. Experiment with modifying the formatting in the \u201cHello, world!\u201d program. Add blank lines, spaces, change indentation, insert newlines. After making a modifi\u2010 cation, run go fmt to see if the formatting change is undone. Also, run go build to see if the code still compiles. You can also add additional fmt.Println calls so you can see what happens if you put blank lines in the middle of a function."
+  },
+  {
+    "day": 4,
+    "chapter": 2,
+    "exercise": 1,
+    "folder": "day-004-ch02-ex01",
+    "chapter_title": "Predeclared Types and Declarations",
+    "prompt": "1. Write a program that declares an integer variable called i with the value 20. Assign i to a floating-point variable named f. Print out i and f."
+  },
+  {
+    "day": 5,
+    "chapter": 2,
+    "exercise": 2,
+    "folder": "day-005-ch02-ex02",
+    "chapter_title": "Predeclared Types and Declarations",
+    "prompt": "2. Write a program that declares a constant called value that can be assigned to both an integer and a floating-point variable. Assign it to an integer called i and a floating-point variable called f. Print out i and f."
+  },
+  {
+    "day": 6,
+    "chapter": 2,
+    "exercise": 3,
+    "folder": "day-006-ch02-ex03",
+    "chapter_title": "Predeclared Types and Declarations",
+    "prompt": "3. Write a program with three variables, one named b of type byte, one named smallI of type int32, and one named bigI of type uint64. Assign each variable the maximum legal value for its type; then add 1 to each variable. Print out their values."
+  },
+  {
+    "day": 7,
+    "chapter": 3,
+    "exercise": 1,
+    "folder": "day-007-ch03-ex01",
+    "chapter_title": "Composite Types",
+    "prompt": "1. Write a program that defines a variable named greetings of type slice of strings with the following values: \"Hello\", \"Hola\", \"\u0928\u092e\u0938\u094d\u0915\u093e\u0930\", \"\u3053\u3093\u306b\u3061\u306f\", and \"\u041f\u0440\u0438\u0432\u0456\u0442\". Create a subslice containing the first two values; a second subslice with the second, third, and fourth values; and a third subslice with the fourth and fifth values. Print out all four slices."
+  },
+  {
+    "day": 8,
+    "chapter": 3,
+    "exercise": 2,
+    "folder": "day-008-ch03-ex02",
+    "chapter_title": "Composite Types",
+    "prompt": "2. Write a program that defines a string variable called message with the value \"Hi and \" and prints the fourth rune in it as a character, not a number."
+  },
+  {
+    "day": 9,
+    "chapter": 3,
+    "exercise": 3,
+    "folder": "day-009-ch03-ex03",
+    "chapter_title": "Composite Types",
+    "prompt": "3. Write a program that defines a struct called Employee with three fields: firstName, lastName, and id. The first two fields are of type string, and the last field (id) is of type int. Create three instances of this struct using whatever values you\u2019d like. Initialize the first one using the struct literal style without names, the second using the struct literal style with names, and the third with a var declaration. Use dot notation to populate the fields in the third struct. Print out all three structs."
+  },
+  {
+    "day": 10,
+    "chapter": 4,
+    "exercise": 1,
+    "folder": "day-010-ch04-ex01",
+    "chapter_title": "Blocks, Shadows, and Control Structures",
+    "prompt": "1. Write a for loop that puts 100 random numbers between 0 and 100 into an int slice."
+  },
+  {
+    "day": 11,
+    "chapter": 4,
+    "exercise": 2,
+    "folder": "day-011-ch04-ex02",
+    "chapter_title": "Blocks, Shadows, and Control Structures",
+    "prompt": "2. Loop over the slice you created in exercise 1. For each value in the slice, apply the following rules: a. If the value is divisible by 2, print \u201cTwo!\u201d b. If the value is divisible by 3, print \u201cThree!\u201d c. IIf the value is divisible by 2 and 3, print \u201cSix!\u201d. Don\u2019t print anything else. d. Otherwise, print \u201cNever mind\u201d."
+  },
+  {
+    "day": 12,
+    "chapter": 4,
+    "exercise": 3,
+    "folder": "day-012-ch04-ex03",
+    "chapter_title": "Blocks, Shadows, and Control Structures",
+    "prompt": "3. Start a new program. In main, declare an int variable called total. Write a for loop that uses a variable named i to iterate from 0 (inclusive) to 10 (exclusive). The body of the for loop should be as follows: total := total + i fmt.Println(total) After the for loop, print out the value of total. What is printed out? What is the likely bug in this code?"
+  },
+  {
+    "day": 13,
+    "chapter": 5,
+    "exercise": 1,
+    "folder": "day-013-ch05-ex01",
+    "chapter_title": "Functions",
+    "prompt": "1. The simple calculator program doesn\u2019t handle one error case: division by zero. Change the function signature for the math operations to return both an int and an error. In the div function, if the divisor is 0, return errors.New(\"division by zero\") for the error. In all other cases, return nil. Adjust the main function to check for this error."
+  },
+  {
+    "day": 14,
+    "chapter": 5,
+    "exercise": 2,
+    "folder": "day-014-ch05-ex02",
+    "chapter_title": "Functions",
+    "prompt": "2. Write a function called fileLen that has an input parameter of type string and returns an int and an error. The function takes in a filename and returns the number of bytes in the file. If there is an error reading the file, return the error. Use defer to make sure the file is closed properly."
+  },
+  {
+    "day": 15,
+    "chapter": 5,
+    "exercise": 3,
+    "folder": "day-015-ch05-ex03",
+    "chapter_title": "Functions",
+    "prompt": "3. Write a function called prefixer that has an input parameter of type string and returns a function that has an input parameter of type string and returns a string. The returned function should prefix its input with the string passed into prefixer. Use the following main function to test prefixer: func main() { helloPrefix := prefixer(\"Hello\") fmt.Println(helloPrefix(\"Bob\")) // should print Hello Bob fmt.Println(helloPrefix(\"Maria\")) // should print Hello Maria }"
+  },
+  {
+    "day": 16,
+    "chapter": 6,
+    "exercise": 1,
+    "folder": "day-016-ch06-ex01",
+    "chapter_title": "Pointers",
+    "prompt": "1. Create a struct named Person with three fields: FirstName and LastName of type string and Age of type int. Write a function called MakePerson that takes in firstName, lastName, and age and returns a Person. Write a second function MakePersonPointer that takes in firstName, lastName, and age and returns a *Person. Call both from main. Compile your program with go build -gcflags=\"-m\". This both compiles your code and prints out which values escape to the heap. Are you surprised about what escapes?"
+  },
+  {
+    "day": 17,
+    "chapter": 6,
+    "exercise": 2,
+    "folder": "day-017-ch06-ex02",
+    "chapter_title": "Pointers",
+    "prompt": "2. Write two functions. The UpdateSlice function takes in a []string and a string. It sets the last position in the passed-in slice to the passed-in string. At the end of UpdateSlice, print the slice after making the change. The GrowSlice function also takes in a []string and a string. It appends the string onto the slice. At the end of GrowSlice, print the slice after making the change. Call these functions from main. Print out the slice before each function is called and after each function is called. Do you understand why some changes are visible in main and why some changes are not?"
+  },
+  {
+    "day": 18,
+    "chapter": 6,
+    "exercise": 3,
+    "folder": "day-018-ch06-ex03",
+    "chapter_title": "Pointers",
+    "prompt": "3. Write a program that builds a []Person with 10,000,000 entries (they could all be the same names and ages). See how long it takes to run. Change the value of GOGC and see how that affects the time it takes for the program to complete. Set the environment variable GODEBUG=gctrace=1 to see when garbage collections happen and see how changing GOGC changes the number of garbage collections. What happens if you create the slice with a capacity of 10,000,000?"
+  },
+  {
+    "day": 19,
+    "chapter": 7,
+    "exercise": 1,
+    "folder": "day-019-ch07-ex01",
+    "chapter_title": "Types, Methods, and Interfaces",
+    "prompt": "1. You have been asked to manage a basketball league and are going to write a program to help you. Define two types. The first one, called Team, has a field for the name of the team and a field for the player names. The second type is called League and has a field called Teams for the teams in the league and a field called Wins that maps a team\u2019s name to its number of wins."
+  },
+  {
+    "day": 20,
+    "chapter": 7,
+    "exercise": 2,
+    "folder": "day-020-ch07-ex02",
+    "chapter_title": "Types, Methods, and Interfaces",
+    "prompt": "2. Add two methods to League. The first method is called MatchResult. It takes four parameters: the name of the first team, its score in the game, the name of the second team, and its score in the game. This method should update the Wins field in League. Add a second method to League called Ranking that returns a slice of the team names in order of wins. Build your data structures and call these methods from the main function in your program using some sample data."
+  },
+  {
+    "day": 21,
+    "chapter": 7,
+    "exercise": 3,
+    "folder": "day-021-ch07-ex03",
+    "chapter_title": "Types, Methods, and Interfaces",
+    "prompt": "3. Define an interface called Ranker that has a single method called Ranking that returns a slice of strings. Write a function called RankPrinter with two parame\u2010 ters, the first of type Ranker and the second of type io.Writer. Use the io.Write String function to write the values returned by Ranker to the io.Writer, with a newline separating each result. Call this function from main."
+  },
+  {
+    "day": 22,
+    "chapter": 8,
+    "exercise": 1,
+    "folder": "day-022-ch08-ex01",
+    "chapter_title": "Generics",
+    "prompt": "1. Write a generic function that doubles the value of any integer or float that\u2019s passed in to it. Define any needed generic interfaces."
+  },
+  {
+    "day": 23,
+    "chapter": 8,
+    "exercise": 2,
+    "folder": "day-023-ch08-ex02",
+    "chapter_title": "Generics",
+    "prompt": "2. Define a generic interface called Printable that matches a type that implements fmt.Stringer and has an underlying type of int or float64. Define types that meet this interface. Write a function that takes in a Printable and prints its value to the screen using fmt.Println."
+  },
+  {
+    "day": 24,
+    "chapter": 8,
+    "exercise": 3,
+    "folder": "day-024-ch08-ex03",
+    "chapter_title": "Generics",
+    "prompt": "3. Write a generic singly linked list data type. Each element can hold a comparable value and has a pointer to the next element in the list. The methods to implement are as follows: // adds a new element to the end of the linked list Add(T) // adds an element at the specified position in the linked list Insert(T, int) // returns the position of the supplied value, -1 if it's not present Index (T) int"
+  },
+  {
+    "day": 25,
+    "chapter": 9,
+    "exercise": 1,
+    "folder": "day-025-ch09-ex01",
+    "chapter_title": "Errors",
+    "prompt": "1. Create a sentinel error to represent an invalid ID. In main, use errors.Is to check for the sentinel error, and print a message when it is found."
+  },
+  {
+    "day": 26,
+    "chapter": 9,
+    "exercise": 2,
+    "folder": "day-026-ch09-ex02",
+    "chapter_title": "Errors",
+    "prompt": "2. Define a custom error type to represent an empty field error. This error should include the name of the empty Employee field. In main, use errors.As to check for this error. Print out a message that includes the field name."
+  },
+  {
+    "day": 27,
+    "chapter": 9,
+    "exercise": 3,
+    "folder": "day-027-ch09-ex03",
+    "chapter_title": "Errors",
+    "prompt": "3. Rather than returning the first error found, return back a single error that con\u2010 tains all errors discovered during validation. Update the code in main to properly report multiple errors."
+  },
+  {
+    "day": 28,
+    "chapter": 10,
+    "exercise": 1,
+    "folder": "day-028-ch10-ex01",
+    "chapter_title": "Modules, Packages, and Imports",
+    "prompt": "1. Create a module in your own public repository. This module has a single func\u2010 tion named Add with two int parameters and one int return value. This function adds the two parameters together and returns them. Make this version v1.0.0."
+  },
+  {
+    "day": 29,
+    "chapter": 10,
+    "exercise": 2,
+    "folder": "day-029-ch10-ex02",
+    "chapter_title": "Modules, Packages, and Imports",
+    "prompt": "2. Add godoc comments to your module that describe the package and the Add function. Be sure to include a link to https://www.mathsisfun.com/numbers/addi tion.html in your Add function godoc. Make this version v1.0.1."
+  },
+  {
+    "day": 30,
+    "chapter": 10,
+    "exercise": 3,
+    "folder": "day-030-ch10-ex03",
+    "chapter_title": "Modules, Packages, and Imports",
+    "prompt": "3. Change Add to make it generic. Import the golang.org/x/exp/constraints package. Combine the Integer and Float types in that package to create an interface called Number. Rewrite Add to take in two parameters of type Number and return a value of type Number. Version your module again. Because this is a backward-breaking change, this should be v2.0.0 of your module."
+  },
+  {
+    "day": 31,
+    "chapter": 11,
+    "exercise": 1,
+    "folder": "day-031-ch11-ex01",
+    "chapter_title": "Go Tooling",
+    "prompt": "1. Go to the UN\u2019s Universal Declaration of Human Rights (UDHR) page and copy the text of the UDHR into a text file called english_rights.txt. Click the Other Languages link and copy the document text in a few additional languages into files named LANGUAGE_rights.txt. Create a program that embeds these files into package-level variables. Your program should take in one command-line parameter, the name of a language. It should then print out the UDHR in that language."
+  },
+  {
+    "day": 32,
+    "chapter": 11,
+    "exercise": 2,
+    "folder": "day-032-ch11-ex02",
+    "chapter_title": "Go Tooling",
+    "prompt": "2. Use go install to install staticcheck. Run it against your program and fix any problems it finds."
+  },
+  {
+    "day": 33,
+    "chapter": 11,
+    "exercise": 3,
+    "folder": "day-033-ch11-ex03",
+    "chapter_title": "Go Tooling",
+    "prompt": "3. Cross-compile your program for ARM64 on Windows. If you are using an ARM64 Windows computer, cross-compile for AMD64 on Linux."
+  },
+  {
+    "day": 34,
+    "chapter": 12,
+    "exercise": 1,
+    "folder": "day-034-ch12-ex01",
+    "chapter_title": "Concurrency in Go",
+    "prompt": "1. Create a function that launches three goroutines that communicate using a channel. The first two goroutines each write 10 numbers to the channel. The third goroutine reads all the numbers from the channel and prints them out. The function should exit when all values have been printed out. Make sure that none of the goroutines leak. You can create additional goroutines if needed."
+  },
+  {
+    "day": 35,
+    "chapter": 12,
+    "exercise": 2,
+    "folder": "day-035-ch12-ex02",
+    "chapter_title": "Concurrency in Go",
+    "prompt": "2. Create a function that launches two goroutines. Each goroutine writes 10 num\u2010 bers to its own channel. Use a for-select loop to read from both channels, printing out the number and the goroutine that wrote the value. Make sure that your function exits after all values are read and that none of your goroutines leak."
+  },
+  {
+    "day": 36,
+    "chapter": 12,
+    "exercise": 3,
+    "folder": "day-036-ch12-ex03",
+    "chapter_title": "Concurrency in Go",
+    "prompt": "3. Write a function that builds a map[int]float64 where the keys are the numbers from 0 (inclusive) to 100,000 (exclusive) and the values are the square roots of those numbers (use the math.Sqrt function to calculate square roots). Use sync.OnceValue to generate a function that caches the map returned by this function and use the cached value to look up square roots for every 1,000th number from 0 to 100,000."
+  },
+  {
+    "day": 37,
+    "chapter": 13,
+    "exercise": 1,
+    "folder": "day-037-ch13-ex01",
+    "chapter_title": "The Standard Library",
+    "prompt": "1. Write a small web server that returns the current time in RFC 3339 format when you send it a GET command. You can use a third-party module if you\u2019d like."
+  },
+  {
+    "day": 38,
+    "chapter": 13,
+    "exercise": 2,
+    "folder": "day-038-ch13-ex02",
+    "chapter_title": "The Standard Library",
+    "prompt": "2. Write a small middleware component that uses JSON structured logging to log the IP address of each incoming request to your web server."
+  },
+  {
+    "day": 39,
+    "chapter": 13,
+    "exercise": 3,
+    "folder": "day-039-ch13-ex03",
+    "chapter_title": "The Standard Library",
+    "prompt": "3. Add the ability to return the time as JSON. Use the Accept header to control whether JSON or text is returned (default to text). The JSON should be struc\u2010 tured as follows: { \"day_of_week\": \"Monday\", \"day_of_month\": 10, \"month\": \"April\", \"year\": 2023, \"hour\": 20, \"minute\": 15, \"second\": 20 }"
+  },
+  {
+    "day": 40,
+    "chapter": 14,
+    "exercise": 1,
+    "folder": "day-040-ch14-ex01",
+    "chapter_title": "The Context",
+    "prompt": "1. Create a middleware-generating function that creates a context with a time\u2010 out. The function should have one parameter, which is the number of milli\u2010 seconds that a request is allowed to run. It should return a func(http.Handler) http.Handler."
+  },
+  {
+    "day": 41,
+    "chapter": 14,
+    "exercise": 2,
+    "folder": "day-041-ch14-ex02",
+    "chapter_title": "The Context",
+    "prompt": "2. Write a program that adds randomly generated numbers between 0 (inclusive) and 100,000,000 (exclusive) together until one of two things happen: the number 1234 is generated or 2 seconds has passed. Print out the sum, the number of iterations, and the reason for ending (timeout or number reached)."
+  },
+  {
+    "day": 42,
+    "chapter": 14,
+    "exercise": 3,
+    "folder": "day-042-ch14-ex03",
+    "chapter_title": "The Context",
+    "prompt": "3. Assume you have a simple logging function that looks like this: func Log(ctx context.Context, level Level, message string) { var inLevel Level // TODO get a logging level out of the context and assign it to inLevel if level == Debug && inLevel == Debug { fmt.Println(message) } if level == Info && (inLevel == Debug || inLevel == Info) { fmt.Println(message) } } Define a type called Level whose underlying type is string. Define two con\u2010 stants of this type, Debug and Info, and set them to \"debug\" and \"info\", respectively. Create functions to store the log level in the context and to extract it. Create a middleware function to get the logging level from a query parameter called log_level. The valid values for log_level are debug and info. Finally, fill in the TODO in Log to properly extract the log level from the context. If the log level is not assigned or is not a valid value, nothing should be printed."
+  },
+  {
+    "day": 43,
+    "chapter": 15,
+    "exercise": 1,
+    "folder": "day-043-ch15-ex01",
+    "chapter_title": "Tests",
+    "prompt": "1. Download the Simple Web App program. Write unit tests for the program and get as close to 100% code coverage as you can. If you find any bugs, fix them."
+  },
+  {
+    "day": 44,
+    "chapter": 15,
+    "exercise": 2,
+    "folder": "day-044-ch15-ex02",
+    "chapter_title": "Tests",
+    "prompt": "2. Use the race detector to find a concurrency problem in the program and fix it."
+  },
+  {
+    "day": 45,
+    "chapter": 15,
+    "exercise": 3,
+    "folder": "day-045-ch15-ex03",
+    "chapter_title": "Tests",
+    "prompt": "3. Write a fuzz test against the parser function and fix any problems that you find."
+  },
+  {
+    "day": 46,
+    "chapter": 16,
+    "exercise": 1,
+    "folder": "day-046-ch16-ex01",
+    "chapter_title": "Reflection, Unsafe, and cgo",
+    "prompt": "1. Use reflection to create a simple minimal string-length validator for struct fields. Write a ValidateStringLength function that takes in a struct and returns an error if one or more of the fields is a string, has a struct tag called minStrlen, and the length of the value in the field is less than the value specified in the struct tag. Nonstring fields and string fields that don\u2019t have the minStrlen struct tag are ignored. Use errors.Join to report all invalid fields. Be sure to validate that a struct was passed in. Return nil if all fields are of the proper length."
+  },
+  {
+    "day": 47,
+    "chapter": 16,
+    "exercise": 2,
+    "folder": "day-047-ch16-ex02",
+    "chapter_title": "Reflection, Unsafe, and cgo",
+    "prompt": "2. Use unsafe.Sizeof and unsafe.Offsetof to print out the size and offsets for the OrderInfo struct defined in ch16/tree/main/sample_code/orders. Create a new type, SmallOrderInfo, that has the same fields, but reordered to use as little memory as possible."
+  },
+  {
+    "day": 48,
+    "chapter": 16,
+    "exercise": 3,
+    "folder": "day-048-ch16-ex03",
+    "chapter_title": "Reflection, Unsafe, and cgo",
+    "prompt": "3. Copy the C code at ch16/tree/main/sample_code/mini_calc into your own module and use cgo to call it from a Go program."
+  }
+]
